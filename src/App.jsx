@@ -5,7 +5,7 @@ import HomeButtons from './components/HomeButtons'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 import NewProjectHeader from './components/NewProjectHeader'
 import NewProjectForm from './components/NewProjectForm'
-import Result from './components/Result'
+// import Result from './components/Result'
 
 const App = () => {
     return (
@@ -28,14 +28,14 @@ const App = () => {
                 </div>
             </Route>
 
-            <Route path='/result'>
+            {/* <Route path='/result'>
 
                 <div className="h-full">
                     <NewProjectHeader />
                     <Result />
                     <Footer />
                 </div>
-            </Route>
+            </Route> */}
 
         </Router>
     )
