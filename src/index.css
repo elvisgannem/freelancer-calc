@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html,
+#root {
+  height: 100%;
+}
+
+.h-5p {
+  height: 5%;
+}
+.h-10p {
+  height: 10%;
+}
+.h-15p {
+  height: 15%;
+}
+.h-75p {
+  height: 75%;
+}
+
+.w-10p {
+  width: 10%;
+}
+.w-35p {
+  width: 35%;
+}
+.w-70p {
+  width: 70%;
+}
+
+.bg-one {
+  background-color: #5e5cd3;
+}
+.bg-two {
+  background-color: #2dafb8;
+}
+.bg-three {
+  background-color: #989a9a;
+}
+.border-two {
+  border-color: #2dafb8;
+}
+.text-one {
+  color: #5e5cd3;
+}
