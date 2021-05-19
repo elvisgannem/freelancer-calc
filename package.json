@@ -2,6 +2,7 @@
   "name": "calculadora_freela",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://elvisgannem.github.io/freelancer-calc",
   "dependencies": {
     "@craco/craco": "^6.1.2",
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -18,6 +19,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
