@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/freelancer-calc/static/css/main.651a5972.chunk.css",
-    "main.js": "/freelancer-calc/static/js/main.191e02be.chunk.js",
-    "main.js.map": "/freelancer-calc/static/js/main.191e02be.chunk.js.map",
+    "main.css": "/freelancer-calc/static/css/main.abc2bfba.chunk.css",
+    "main.js": "/freelancer-calc/static/js/main.604f92f9.chunk.js",
+    "main.js.map": "/freelancer-calc/static/js/main.604f92f9.chunk.js.map",
     "runtime-main.js": "/freelancer-calc/static/js/runtime-main.469c9ded.js",
     "runtime-main.js.map": "/freelancer-calc/static/js/runtime-main.469c9ded.js.map",
     "static/js/2.e68512f7.chunk.js": "/freelancer-calc/static/js/2.e68512f7.chunk.js",
     "static/js/2.e68512f7.chunk.js.map": "/freelancer-calc/static/js/2.e68512f7.chunk.js.map",
     "index.html": "/freelancer-calc/index.html",
-    "static/css/main.651a5972.chunk.css.map": "/freelancer-calc/static/css/main.651a5972.chunk.css.map",
+    "static/css/main.abc2bfba.chunk.css.map": "/freelancer-calc/static/css/main.abc2bfba.chunk.css.map",
     "static/js/2.e68512f7.chunk.js.LICENSE.txt": "/freelancer-calc/static/js/2.e68512f7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.469c9ded.js",
     "static/js/2.e68512f7.chunk.js",
-    "static/css/main.651a5972.chunk.css",
-    "static/js/main.191e02be.chunk.js"
+    "static/css/main.abc2bfba.chunk.css",
+    "static/js/main.604f92f9.chunk.js"
   ]
 }
