@@ -12,7 +12,7 @@ const App = () => {
         <Router>
 
             <Route path='/' exact={true}>
-                <div className="h-full">
+                <div className="flex flex-col h-full justify-between">
                     <Header />
                     <HomeButtons />
                     <Footer />
@@ -21,7 +21,7 @@ const App = () => {
 
             <Route path='/newproject'>
 
-                <div className="h-full">
+                <div className="flex flex-col h-full justify-between">
                     <NewProjectHeader />
                     <NewProjectForm />
                     <Footer/>

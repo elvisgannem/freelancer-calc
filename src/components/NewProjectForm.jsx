@@ -41,9 +41,9 @@ const NewProjectForm = () => {
     }
 
     return (
-        <div className="h-4/5 md:flex md:flex-col md:justify-center md:relative md:bottom-12">
+        <div className=" md:flex md:flex-col md:justify-center md:relative md:bottom-12 text-sm">
             
-                <form id="newProjectForm" onSubmit={handleSubmit} className="text-center pt-2 md:flex md:flex-col md:justify-center md:items-center">
+                <form id="newProjectForm" onSubmit={handleSubmit} className="text-center pt-2 md:flex md:flex-col md:justify-center md:items-center relative">
 
                     <div className="md:flex md:w-70p md:justify-center md:items-end">
                     
@@ -97,12 +97,14 @@ const NewProjectForm = () => {
 
                     </div>
 
-                </form>
-
-                <div className="text-center mt-6">
+                    <div className="text-center mt-6">
                     
                     <p className="text-one text-5xl">R$ <strong className="text-black block text-3xl">{value}</strong></p>
-                </div>      
+                </div> 
+
+                </form>
+
+                     
 
                       
             
