@@ -1,15 +1,15 @@
 import React, { useState } from "react";
-
+/* eslint eqeqeq: 0 */
 const NewProjectForm = () => {
   const [value, changePrice] = useState(0);
 
   //add the projects to the local storage
 
   function defineProject(project) {
-    if (localStorage.project === undefined) {
+    if (localStorage.project == undefined) {
       localStorage.setItem("project", JSON.stringify(project));
     } else {
-      if (localStorage.projectTwo === undefined) {
+      if (localStorage.projectTwo == undefined) {
         localStorage.setItem("projectTwo", JSON.stringify(project));
       } else {
         localStorage.setItem("projectThree", JSON.stringify(project));
