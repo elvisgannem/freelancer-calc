@@ -5,6 +5,7 @@ import HomeButtons from './components/HomeButtons'
 import { BrowserRouter as Router, Route } from 'react-router-dom/'
 import NewProjectHeader from './components/NewProjectHeader'
 import NewProjectForm from './components/NewProjectForm'
+import PrevProjects from './components/PrevProjects'
 // import Result from './components/Result'
 
 const App = () => {
@@ -28,14 +29,14 @@ const App = () => {
                 </div>
             </Route>
 
-            {/* <Route path='/result'>
+            <Route path='/prev'>
 
-                <div className="h-full">
+                <div className="flex flex-col h-full justify-between">
                     <NewProjectHeader />
-                    <Result />
+                    <PrevProjects />
                     <Footer />
                 </div>
-            </Route> */}
+            </Route>
 
         </Router>
     )
