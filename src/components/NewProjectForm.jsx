@@ -6,10 +6,10 @@ const NewProjectForm = () => {
   //add the projects to the local storage
 
   function defineProject(project) {
-    if (localStorage.project == undefined) {
+    if (localStorage.project === undefined) {
       localStorage.setItem("project", JSON.stringify(project));
     } else {
-      if (localStorage.projectTwo == undefined) {
+      if (localStorage.projectTwo === undefined) {
         localStorage.setItem("projectTwo", JSON.stringify(project));
       } else {
         localStorage.setItem("projectThree", JSON.stringify(project));
