@@ -61,23 +61,23 @@ const NewProjectForm = () => {
 
     <div className="bg-principal-image w-full h-full bg-no-repeat bg-cover bg-center bg-local flex justify-center items-center">
       <form
-        className="flex flex-col items-center"
+        className="flex flex-col items-center gap-2"
         id="newProjectForm"
         onSubmit={handleSubmit}
       >
-        <div className="md:flex" id="first">
-          <div className="flex flex-col items-center">
+        
+          
             <p className="text-white text-sm">
               Quantas horas vai gastar neste projeto?
             </p>
             <input
               required
               type="text"
-              className="rounded w-2/3 opacity-75 focus:outline-none"
+              className="rounded w-2/3 opacity-75 focus:outline-none md:w-4/5"
               id="hoursForm"
             />
-          </div>
-          <div className="flex flex-col items-center mt-3 md:mt-0">
+          
+          
             <p className="text-white text-sm">
               Quanto você quer ganhar por hora?
             </p>
@@ -85,13 +85,13 @@ const NewProjectForm = () => {
               required
               type="text"
               id="perHourForm"
-              className="rounded w-2/3 opacity-75 focus:outline-none"
+              className="rounded w-2/3 opacity-75 focus:outline-none  md:w-4/5"
             />
-          </div>
-        </div>
+          
+        
 
-        <div className="md:flex md:mt-4" id="second">
-          <div className="flex flex-col items-center mt-3 md:mt-0">
+        
+          
             <p className="text-white text-sm">
               Qual o valor das suas ferramentas?
             </p>
@@ -99,10 +99,10 @@ const NewProjectForm = () => {
               required
               type="text"
               id="workspaceForm"
-              className="rounded w-2/3 opacity-75 focus:outline-none"
+              className="rounded w-2/3 opacity-75 focus:outline-none  md:w-4/5"
             />
-          </div>
-          <div className="flex flex-col items-center mt-3 md:mt-0">
+          
+          
             <p className="text-white text-sm">
               Qual a sua experiencia em anos?
             </p>
@@ -110,31 +110,31 @@ const NewProjectForm = () => {
               required
               type="text"
               id="experienceForm"
-              className="rounded w-2/3 opacity-75 focus:outline-none"
+              className="rounded w-2/3 opacity-75 focus:outline-none  md:w-4/5"
             />
-          </div>
-        </div>
+          
+        
 
-        <div className="md:flex md:w-full md:m-auto md:mt-4" id="third">
-          <div className="flex flex-col items-center mt-3 md:mt-0 ">
+        
+          
             <p className="text-white">Coloca um titulo</p>
             <input
               required
               type="text"
               id="projectTitle"
-              className="rounded w-2/3 opacity-75 focus:outline-none"
+              className="rounded w-2/3 opacity-75 focus:outline-none  md:w-4/5"
             />
-          </div>
+          
 
-          <div className="w-2/3 mt-5 m-auto md:w-1/3">
+          
             <input
               type="submit"
               value="Calcular"
-              className="w-full py-1 rounded bg-green-500 text-white font-medium"
+              className="w-2/3 mt-3 py-1 rounded bg-green-500 text-white font-medium  md:w-4/5"
               onClick={() => changePrice(validateForm())}
             />
-          </div>
-        </div>
+          
+        
 
         <h2 className="text-2xl mt-3 text-white font-bold md:text-4xl md:mt-6">
           R$ {value}
