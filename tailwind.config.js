@@ -5,7 +5,11 @@ module.exports = {
       fontFamily: {
         'raleway': ['Raleway'],
       },
-      extend: {},
+      extend: {
+        backgroundImage: theme => ({
+          'principal-image': "url('/src/img/background.jpg')"
+        })
+      },
     },
     variants: {
       extend: {},

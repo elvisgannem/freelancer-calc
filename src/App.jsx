@@ -1,6 +1,4 @@
 import React from 'react'
-import Footer from './components/Footer'
-import Header from './components/Header'
 import HomeButtons from './components/HomeButtons'
 import { BrowserRouter as Router, Route } from 'react-router-dom/'
 import NewProjectHeader from './components/NewProjectHeader'
@@ -14,9 +12,7 @@ const App = () => {
 
             <Route path='/' exact={true}>
                 <div className="flex flex-col h-full justify-between">
-                    <Header />
                     <HomeButtons />
-                    <Footer />
                 </div>
             </Route>
 
@@ -25,7 +21,6 @@ const App = () => {
                 <div className="flex flex-col h-full justify-between">
                     <NewProjectHeader />
                     <NewProjectForm />
-                    <Footer/>
                 </div>
             </Route>
 
@@ -34,7 +29,6 @@ const App = () => {
                 <div className="flex flex-col h-full justify-between">
                     <NewProjectHeader />
                     <PrevProjects />
-                    <Footer />
                 </div>
             </Route>
 

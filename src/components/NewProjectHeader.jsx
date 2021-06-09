@@ -7,18 +7,9 @@ const NewProjectHeader = () => {
 
     
     return (
-        <div className="">
+        <div className="absolute p-2 md:p-4">
 
-            <div className="flex justify-between p-2 md:justify-start">
-                <Link to='/'><FontAwesomeIcon icon={faArrowLeft} className="text-4xl"/></Link>
-                
-                
-                    <h2 className="text-2xl pr-4 md:ml-8">Calcular novo projeto</h2>
-                
-
-            </div>
-
-            <hr className="h-5p border-8 border-two mt-2" />
+            <Link to="/"><FontAwesomeIcon icon={faArrowLeft} className="text-white text-2xl md:text-3xl"/></Link>
 
         </div>
     )

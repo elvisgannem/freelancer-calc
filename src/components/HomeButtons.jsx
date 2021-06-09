@@ -1,18 +1,30 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const HomeButtons = () => {
-    return (
-        
-        <div className="flex flex-col justify-center items-center lg:flex-row lg:px-24 xl:px-28 gap-10">
+  return (
 
-                <button className="bg-two bg-opacity-75 p-6 rounded-md text-white text-xl w-2/3 shadow-lg relative bottom-5 focus:outline-none cursor-pointer md:w-2/4 lg:text-4xl "><Link to='/newproject'><p className="inline-block lg:block">Calcular</p> novo projeto</Link></button>
+    <div className="bg-principal-image w-full h-full bg-no-repeat bg-cover bg-center bg-local flex justify-center items-center">
+      <div className="flex flex-col gap-5">
+        <h1 className="text-white text-2xl text-center md:text-3xl">
+          Calculadora Freelancer
+        </h1>
+        <div className="flex gap-px justify-center">
+          <Link to="/newproject">
+            <button className="btn rounded-l-md">
+              Novo projeto
+            </button>
+          </Link>
 
-                <button className="bg-one bg-opacity-75 rounded-md text-white text-lg w-2/3 p-6 shadow-lg relative bottom-5 focus:outline-none cursor-pointer md:w-2/4 lg:text-4xl"><Link to='/prev'><p className="inline-block lg:block">Ver projetos</p> anteriores</Link></button>
-            
+          <Link to="/prev">
+          <button className="btn rounded-r-md">
+            Ver projetos
+          </button>
+          </Link>
         </div>
-        
-    )
-}
+      </div>
+    </div>
+  );
+};
 
-export default HomeButtons
+export default HomeButtons;

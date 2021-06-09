@@ -58,87 +58,87 @@ const NewProjectForm = () => {
   }
 
   return (
-    <div className=" md:flex md:flex-col md:justify-center md:relative md:bottom-12 text-sm">
+
+    <div className="bg-principal-image w-full h-full bg-no-repeat bg-cover bg-center bg-local flex justify-center items-center">
       <form
+        className="flex flex-col items-center"
         id="newProjectForm"
         onSubmit={handleSubmit}
-        className="text-center pt-2 md:flex md:flex-col md:justify-center md:items-center relative"
       >
-        <div className="md:flex md:w-70p md:justify-center md:items-end">
-          <div className="md:w-60">
-            <p className="md:text-sm">
-              Quantas horas você vai gastar neste projeto?
+        <div className="md:flex" id="first">
+          <div className="flex flex-col items-center">
+            <p className="text-white text-sm">
+              Quantas horas vai gastar neste projeto?
             </p>
             <input
               required
               type="text"
+              className="rounded w-2/3 opacity-75 focus:outline-none"
               id="hoursForm"
-              className="w-4/5 border-gray-400 border bg-indigo-50 rounded-md mb-6 sm:w-3/5 md:w-52 outline-none"
             />
           </div>
-
-          <div className="md:w-60">
-            <p className="md:text-sm">Quanto você quer ganhar por hora?</p>
+          <div className="flex flex-col items-center mt-3 md:mt-0">
+            <p className="text-white text-sm">
+              Quanto você quer ganhar por hora?
+            </p>
             <input
               required
               type="text"
               id="perHourForm"
-              className="w-4/5 border-gray-400 border bg-indigo-50 rounded-md mb-6 sm:w-3/5 md:w-52 outline-none"
+              className="rounded w-2/3 opacity-75 focus:outline-none"
             />
           </div>
         </div>
 
-        <div className="md:flex md:w-70p md:justify-center md:items-end">
-          <div className="md:w-60">
-            <p className="md:text-sm">Qual o valor das suas ferramentas?</p>
+        <div className="md:flex md:mt-4" id="second">
+          <div className="flex flex-col items-center mt-3 md:mt-0">
+            <p className="text-white text-sm">
+              Qual o valor das suas ferramentas?
+            </p>
             <input
               required
               type="text"
               id="workspaceForm"
-              className="w-4/5 border-gray-400 border bg-indigo-50 rounded-md mb-6 sm:w-3/5 md:w-52 outline-none"
+              className="rounded w-2/3 opacity-75 focus:outline-none"
             />
           </div>
-
-          <div className="md:w-60">
-            <p className="md:text-sm">Qual a sua experiencia em anos?</p>
+          <div className="flex flex-col items-center mt-3 md:mt-0">
+            <p className="text-white text-sm">
+              Qual a sua experiencia em anos?
+            </p>
             <input
               required
               type="text"
               id="experienceForm"
-              className="w-4/5 border-gray-400 border bg-indigo-50 rounded-md mb-6 sm:w-3/5 md:w-52 outline-none"
+              className="rounded w-2/3 opacity-75 focus:outline-none"
             />
           </div>
         </div>
-        <div className="md:flex md:w-70p md:justify-center md:items-end">
-          <div className="md:w-60">
-            <p className="md:text-sm">Coloca um titulo</p>
+
+        <div className="md:flex md:w-full md:m-auto md:mt-4" id="third">
+          <div className="flex flex-col items-center mt-3 md:mt-0 ">
+            <p className="text-white">Coloca um titulo</p>
             <input
               required
               type="text"
               id="projectTitle"
-              className="w-4/5 border-gray-400 border bg-indigo-50 rounded-md mb-6 sm:w-3/5 md:w-52 outline-none"
+              className="rounded w-2/3 opacity-75 focus:outline-none"
             />
           </div>
-        </div>
 
-        <div className="md:flex md:w-70p md:justify-center md:items-center">
-          <div className="md:w-60">
-            {/* <Link to='result' className=""> */}
+          <div className="w-2/3 mt-5 m-auto md:w-1/3">
             <input
               type="submit"
               value="Calcular"
+              className="w-full py-1 rounded bg-green-500 text-white font-medium"
               onClick={() => changePrice(validateForm())}
-              className="block m-auto mt-8 w-4/5 py-2 bg-two outline-none cursor-pointer rounded-lg text-white font-semibold text-xl sm:w-3/5 md:w-52 md:mt-0"
             />
-            {/* </Link> */}
           </div>
         </div>
 
-        <div className="text-center mt-6">
-          <p className="text-one text-5xl">
-            R$ <strong className="text-black block text-3xl">{value}</strong>
-          </p>
-        </div>
+        <h2 className="text-2xl mt-3 text-white font-bold md:text-4xl md:mt-6">
+          R$ {value}
+        </h2>
       </form>
     </div>
   );
